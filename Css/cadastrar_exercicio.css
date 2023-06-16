@@ -1,0 +1,99 @@
+/* Definição de cores */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #007bff;
+  --light-color: white;
+  --dark-color: #264653;
+  --accent-color: #e9c46a;
+}
+
+/* Estilo da ficha de treino */
+		body {
+font-family: Arial, sans-serif;
+            background-color: white; /* alteração aqui */
+            padding: 20px;
+		}
+
+.workout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+td.numeric {
+  text-align: center;
+}
+
+/* Estilo para células com carga */
+td.carga {
+  font-weight: bold;
+}
+
+/* Estilo para células de tipo de treino */
+td.tipo-treino {
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--dark-color);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+button.adicionar, button.salvar {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button.editar, button.excluir {
+  background-color: #007bff;
+}

@@ -1,0 +1,75 @@
+	body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.4em 1em;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+input[name="dia"],
+input[name="mes"],
+input[name="ano"],
+input[name="cpf"],
+input[name="cpf2"],
+input[name="numero"],
+input[name="cep"],
+input[name="cep2"] {
+    width: auto;
+}

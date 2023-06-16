@@ -1,0 +1,79 @@
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .calendar-container {
+        max-width: 250px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      
+      td {
+        cursor: pointer;
+      }
+      
+      td:hover {
+        background-color: #f2f2f2;
+      }
+      
+      .current-day {
+        font-weight: bold;
+        color: #ff0000;
+      }
+      
+      .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      
+      .navigation-buttons button {
+        padding: 5px 10px;
+        border: none;
+        background-color: #f2f2f2;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .navigation-buttons button:hover {
+        background-color: #ddd;
+      }
+	  
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+      
+      main {
+        background-image: url("fundo.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        padding: 20px;
+      }

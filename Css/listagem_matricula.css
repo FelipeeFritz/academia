@@ -1,0 +1,92 @@
+		body {
+font-family: Arial, sans-serif;
+            background-color: white; /* alteração aqui */
+            padding: 20px;
+		}
+
+h2 {
+  color: #444;
+  text-align: center;
+  margin-top: 20px;
+}
+
+		
+		table {
+			background-color: #fff;
+			border-collapse: collapse;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			margin: 100 auto;
+			max-width: 2000px;
+			width: 100%;
+		}
+
+		th, td {
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: left;
+		}
+
+		th {
+			background-color: #007bff;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		tr:nth-child(even) {
+			background-color: #C0C0C0;
+		}
+
+		a {
+			color: #4CAF50;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+@media only screen and (max-width: 768px) {
+	.contactList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.contactList {
+		grid-template-columns: 1fr;
+	}
+}		
+select, input {
+  padding: 12px;
+  font-size: 16px;
+
+}
+
+#searchExport {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #searchExport input {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+
+        #exportOptions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        #exportOptions button {
+            padding: 12px;
+            font-size: 16px;
+            background-color: #d3d3d3; /* cinza claro */
+            border: none;
+            cursor: pointer;
+        }
+
+        #exportOptions button:hover {
+            background-color: #c0c0c0; /* cinza um pouco mais escuro */
+        }

@@ -1,0 +1,79 @@
+      html, body {
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .form-signin {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px;
+        background-color: #DCDCDC;
+        border-radius: 8px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-signin h1 {
+        margin-bottom: 30px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .form-signin input {
+        font-size: 14px;
+      }
+
+      .form-signin .form-floating {
+        margin-bottom: 15px;
+      }
+
+      .form-signin input[type="email"],
+      .form-signin input[type="password"] {
+        padding: 15px 20px;
+        border-radius: 5px;
+      }
+
+      .checkbox {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+
+      .btn-primary:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+
+      .forgot {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #6c757d;
+        text-decoration: none;
+      }
+
+      .forgot:hover {
+        text-decoration: underline;
+      }
+	  
+body {
+  background-image: url('img/img_academia.jpg');
+  background-size: cover;
+  background-position: center;
+}
