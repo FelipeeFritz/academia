@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listagem de Matricula</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://cdn.jsdelivr.net/gh/MrRio/jsPDF@2.4.0/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/simonbengtsson/jsPDF-AutoTable@3.5.23/dist/jspdf.plugin.autotable.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Css/listagem_matricula.css">
+</head>
+<body>
+    <h2>Listagem de Matricula</h2>
+    <div id="filter">
+        <div id="searchExport">
+            <input type="text" id="nameInput" placeholder="Pesquisar por nome/matricula" onkeyup="filterTable()" />
+            <div id="exportOptions">
+                <button onclick="exportToCSV()">CSV</button>
+                <button onclick="exportToPDF()">PDF</button>
+            </div>
+        </div>
+		<br><br>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Matricula</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Os registros serão adicionados aqui via JavaScript -->
+            </tbody>
+        </table>	
+    </div>
+<script src="JavaScript/listagem_matricula.js"></script>
+<script src="JavaScript/listagem_matricula_pdf.js"></script>
+</body>
+</html>

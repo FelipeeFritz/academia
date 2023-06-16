@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avaliação fisica</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Css/avaliacao_fisica.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação Física</h1>
+        <form id="avaliacao-form" action="Php/avaliacao_fisica.php" method="post">
+
+            <fieldset>
+                <legend>Medições do corpo</legend>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="braco">Circunferência do braço (cm)</label>
+                        <input type="text" id="braco" name="braco">
+                    </div>
+                    <div class="input-group">
+                        <label for="antebraco">Circunferência do antebraço (cm)</label>
+                        <input type="text" id="antebraco" name="antebraco">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="peito">Circunferência do peito (cm)</label>
+                        <input type="text" id="peito" name="peito">
+                    </div>
+                    <div class="input-group">
+                        <label for="cintura">Circunferência da cintura (cm)</label>
+                        <input type="text" id="cintura" name="cintura">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="quadril">Circunferência do quadril (cm)</label>
+                        <input type="text" id="quadril" name="quadril">
+                    </div>
+                    <div class="input-group">
+                        <label for="coxa">Circunferência da coxa (cm)</label>
+                        <input type="text" id="coxa" name="coxa">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="panturrilha">Circunferência da panturrilha (cm)</label>
+                        <input type="text" id="panturrilha" name="panturrilha">
+                    </div>
+                    <div class="input-group">
+                        <label for="altura">Altura (cm)</label>
+                        <input type="text" id="altura" name="altura">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="peso">Peso corporal (kg)</label>
+                        <input type="text" id="peso" name="peso">
+                    </div>
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <h2>Relatório</h2>
+        <div id="results"></div>
+    </div>
+<script src="JavaScript/avaliacao_fisica.js"></script>
+</body>
+</html>
+

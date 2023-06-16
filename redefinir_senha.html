@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redefinir Senha</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+	<link rel="stylesheet" type="text/css" href="Css/redefinir_senha.css">
+</head>
+<body>
+<div class="container">
+    <h1>Redefinir Senha</h1>
+    <form action="redefinir_senha.php" method="POST">
+        <label for="email">Endereço de e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="new-password">Nova senha:</label>
+        <input type="password" id="new-password" name="new-password" required>
+
+        <label for="confirm-password">Confirme a nova senha:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <button type="submit">Redefinir Senha</button>
+    </form>
+</div>
+</body>
+</html>

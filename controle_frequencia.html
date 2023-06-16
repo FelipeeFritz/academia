@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agendamento de Aulas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Css/controle_frequencia.css">
+</head>
+<body>
+<h1>Agendamento de Aulas</h1>
+<form id="formulario" action="controle_frequencia.php" method="POST">
+  <table>
+    <tr>
+      <th>Horário</th>
+      <th>Segunda</th>
+      <th>Terça</th>
+      <th>Quarta</th>
+      <th>Quinta</th>
+      <th>Sexta</th>
+      <th>Capacidade máxima</th>
+    </tr>
+    <tr>
+      <td>08:00 - 09:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-0800" id="seg-0800"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-0800" id="ter-0800"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-0800" id="qua-0800"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-0800" id="qui-0800"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-0800" id="sex-0800"></td>
+      <td><p id="capacidade-0800">0/100</p></td>
+    </tr>
+	<tr>
+      <td>09:00 - 10:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-0900" id="seg-0900"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-0900" id="ter-0900"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-0900" id="qua-0900"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-0900" id="qui-0900"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-0900" id="sex-0900"></td>
+      <td><p id="capacidade-0900">0/100</p></td>
+    </tr>
+	<tr>
+      <td>10:00 - 11:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1000" id="seg-1000"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1000" id="ter-1000"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1000" id="qua-1000"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1000" id="qui-1000"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1000" id="sex-1000"></td>
+      <td><p id="capacidade-1000">0/100</p></td>
+    </tr>
+	<tr>
+      <td>11:00 - 12:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1100" id="seg-1100"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1100" id="ter-1100"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1100" id="qua-1100"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1100" id="qui-1100"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1100" id="sex-1100"></td>
+      <td><p id="capacidade-1100">0/100</p></td>
+    </tr>
+	<tr>
+      <td>12:00 - 13:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1200" id="seg-1200"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1200" id="ter-1200"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1200" id="qua-1200"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1200" id="qui-1200"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1200" id="sex-1200"></td>
+      <td><p id="capacidade-1200">0/100</p></td>
+    </tr>
+	<tr>
+      <td>13:00 - 14:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1300" id="seg-1300"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1300" id="ter-1300"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1300" id="qua-1300"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1300" id="qui-1300"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1300" id="sex-1300"></td>
+      <td><p id="capacidade-1300">0/100</p></td>
+    </tr>
+	<tr>
+      <td>14:00 - 15:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1400" id="seg-1400"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1400" id="ter-1400"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1400" id="qua-1400"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1400" id="qui-1400"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1400" id="sex-1400"></td>
+      <td><p id="capacidade-1400">0/100</p></td>
+    </tr>
+	<tr>
+      <td>15:00 - 16:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1500" id="seg-1500"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1500" id="ter-1500"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1500" id="qua-1500"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1500" id="qui-1500"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1500" id="sex-1500"></td>
+      <td><p id="capacidade-1500">0/100</p></td>
+    </tr>
+	<tr>
+      <td>16:00 - 17:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1600" id="seg-1600"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1600" id="ter-1600"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1600" id="qua-1600"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1600" id="qui-1600"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1600" id="sex-1600"></td>
+      <td><p id="capacidade-1600">0/100</p></td>
+    </tr>
+	<tr>
+      <td>17:00 - 18:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1700" id="seg-1700"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1700" id="ter-1700"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1700" id="qua-1700"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1700" id="qui-1700"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1700" id="sex-1700"></td>
+      <td><p id="capacidade-1700">0/100</p></td>
+    </tr>
+	<tr>
+      <td>18:00 - 19:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1800" id="seg-1800"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1800" id="ter-1800"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1800" id="qua-1800"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1800" id="qui-1800"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1800" id="sex-1800"></td>
+      <td><p id="capacidade-1800">0/100</p></td>
+    </tr>
+	<tr>
+      <td>19:00 - 20:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-1900" id="seg-1900"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-1900" id="ter-1900"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-1900" id="qua-1900"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-1900" id="qui-1900"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-1900" id="sex-1900"></td>
+      <td><p id="capacidade-1900">0/100</p></td>
+    </tr>
+	<tr>
+      <td>20:00 - 21:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-2000" id="seg-2000"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-2000" id="ter-2000"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-2000" id="qua-2000"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-2000" id="qui-2000"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-2000" id="sex-2000"></td>
+      <td><p id="capacidade-2000">0/100</p></td>
+    </tr>
+	<tr>
+      <td>21:00 - 22:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-2100" id="seg-2100"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-2100" id="ter-2100"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-2100" id="qua-2100"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-2100" id="qui-2100"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-2100" id="sex-2100"></td>
+      <td><p id="capacidade-2100">0/100</p></td>
+    </tr>
+	<tr>
+      <td>22:00 - 23:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-2200" id="seg-2200"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-2200" id="ter-2200"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-2200" id="qua-2200"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-2200" id="qui-2200"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-2200" id="sex-2200"></td>
+      <td><p id="capacidade-2200">0/100</p></td>
+    </tr>
+	<tr>
+      <td>23:00 - 00:00</td>
+      <td><input type="checkbox" name="horarios[]" value="seg-2300" id="seg-2300"></td>
+      <td><input type="checkbox" name="horarios[]" value="ter-2300" id="ter-2300"></td>
+      <td><input type="checkbox" name="horarios[]" value="qua-2300" id="qua-2300"></td>
+      <td><input type="checkbox" name="horarios[]" value="qui-2300" id="qui-2300"></td>
+      <td><input type="checkbox" name="horarios[]" value="sex-2300" id="sex-2300"></td>
+      <td><p id="capacidade-2300">0/100</p></td>
+    </tr>
+  </table>
+  <br>
+  <button class="button" type="button" onclick="salvarDados()">Salvar</button>
+</form>
+ <script>
+      var capacidadeMaxima = 100;
+      var capacidadeAtual = {};
+
+      window.addEventListener('load', function () {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(function (checkbox) {
+          var isChecked = localStorage.getItem(checkbox.value) === "true";
+          checkbox.checked = isChecked;
+
+          var diaSemana = checkbox.value.split('-')[0];
+          var hora = checkbox.value.split('-')[1];
+
+          checkbox.disabled = !isDiaSemanaPermitido(diaSemana);
+
+          var capacidade = localStorage.getItem('capacidade-' + hora);
+          if (capacidade !== null) {
+            capacidadeAtual[hora] = Number(capacidade);
+          }
+
+          checkbox.addEventListener('change', function (event) {
+            var hora = event.target.value.split('-')[1];
+            if (event.target.checked) {
+              incrementarCapacidade(hora);
+              disableOtherCheckboxes(event.target);
+            } else {
+              decrementarCapacidade(hora);
+              if (!outraCheckboxSelecionada()) {
+                enableAllCheckboxes();
+              }
+            }
+            updateCapacidade();
+          });
+        });
+        updateCapacidade();
+		  // Limpa o localStorage
+  //localStorage.clear();
+
+      });
+
+      function isDiaSemanaPermitido(diaSemanaCheckbox) {
+        var hoje = new Date();
+        var diaSemanaAtual = hoje.getDay(); // 0 = Domingo, 1 = Segunda, ..., 6 = Sábado
+
+        if (diaSemanaAtual === 0 || diaSemanaAtual === 6) {
+          // Se for domingo (0) ou sábado (6), não é permitido marcar checkbox
+          return false;
+        }
+
+        switch (diaSemanaAtual) {
+          case 1: // Segunda-feira
+            return diaSemanaCheckbox === 'seg';
+          case 2: // Terça-feira
+            return diaSemanaCheckbox === 'ter';
+          case 3: // Quarta-feira
+            return diaSemanaCheckbox === 'qua';
+          case 4: // Quinta-feira
+            return diaSemanaCheckbox === 'qui';
+          case 5: // Sexta-feira
+		            return diaSemanaCheckbox === 'sex';
+          default:
+            return false;
+        }
+      }
+
+function incrementarCapacidade(hora) {
+  if (!capacidadeAtual[hora]) {
+    capacidadeAtual[hora] = 0;
+  }
+  
+  if (capacidadeAtual[hora] >= capacidadeMaxima) {
+    alert('Horário atingiu a capacidade máxima');
+    return;
+  }
+  
+  capacidadeAtual[hora]++;
+  localStorage.setItem('capacidade-' + hora, capacidadeAtual[hora]);
+  localStorage.setItem('checkbox-' + hora, true);
+}
+
+
+      function decrementarCapacidade(hora) {
+        if (capacidadeAtual[hora] && capacidadeAtual[hora] > 0) {
+          capacidadeAtual[hora]--;
+        }
+        localStorage.setItem('capacidade-' + hora, capacidadeAtual[hora]);
+        localStorage.setItem('checkbox-' + hora, false);
+      }
+
+      function updateCapacidade() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(function (checkbox) {
+          var hora = checkbox.value.split('-')[1];
+
+          var capacidadeAtualHora = capacidadeAtual[hora] || 0;
+          if (capacidadeAtualHora > capacidadeMaxima) {
+            capacidadeAtualHora = capacidadeMaxima;
+          }
+          var capacidadeElement = document.getElementById('capacidade-' + hora);
+          if (capacidadeElement !== null) {
+            capacidadeElement.textContent = capacidadeAtualHora + '/' + capacidadeMaxima;
+          }
+        });
+      }
+
+function disableOtherCheckboxes(checkedCheckbox) {
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function (checkbox) {
+    if (checkbox !== checkedCheckbox) {
+      checkbox.disabled = true;
+    }
+  });
+}
+
+function disableAllCheckboxes() {
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function (checkbox) {
+    checkbox.disabled = true;
+  });
+}
+
+function salvarDados() {
+  disableAllCheckboxes(); // Desabilita todos os checkboxes
+
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+  if (checkboxes.length === 0) {
+    alert("Selecione pelo menos um horário.");
+    enableAllCheckboxes(); // Habilita novamente todos os checkboxes em caso de erro
+    return;
+  }
+
+  for (var i = 0; i < checkboxes.length; i++) {
+    var hora = checkboxes[i].value.split('-')[1];
+    if (capacidadeAtual[hora] > capacidadeMaxima) {
+      alert('O horário ' + hora + ' atingiu a capacidade máxima.');
+      enableAllCheckboxes();
+      return;
+    }
+  }
+
+  var formData = new FormData();
+  for (var i = 0; i < checkboxes.length; i++) {
+    formData.append('horarios[]', checkboxes[i].value);
+
+    // Limpa o estado no localStorage após salvar
+    localStorage.setItem(checkboxes[i].id, "false");
+  }
+
+  // Limpa capacidadeAtual do localStorage após salvar
+  localStorage.removeItem('capacidadeAtual');
+
+  var xhr = new XMLHttpRequest();
+  var url = "controle_frequencia.php";
+  xhr.open("POST", url, true);
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      alert(xhr.responseText);
+      checkboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+      // Não limpar capacidadeAtual aqui
+      updateCapacidade();
+      enableAllCheckboxes();
+    } else {
+      alert("Erro ao salvar os dados.");
+    }
+  };
+  xhr.send(formData);
+}
+
+    </script>
+  </body>
+</html>

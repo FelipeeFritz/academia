@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de IMC</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Css/calculadora_imc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de IMC</h1>
+    <div class="content">
+      <div class="form-container">
+        <form onsubmit="calcularIMC(event)">
+          <div class="form">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required>
+            <br>
+            <label for="altura">Altura (m):</label>
+            <input type="number" step="0.01" id="altura" name="altura" required>
+            <br>
+            <button type="submit">Calcular</button>
+            <div id="resultado"></div>
+            <input type="hidden" id="resultadoHidden" name="resultado" value="">
+          </div>
+        </form>
+      </div>
+      <div class="description">
+        <p>O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está com o peso adequado para a sua altura. 
+          Ele é calculado dividindo o peso (em quilogramas) pela altura (em metros) ao quadrado. O resultado indica se a pessoa está abaixo do peso, 
+          com peso normal, com sobrepeso ou obeso.</p>
+        <p>A Organização Mundial da Saúde (OMS) utiliza o IMC como referência para classificar o grau de obesidade e determinar possíveis 
+          riscos à saúde. Vale lembrar que o IMC é apenas um indicador e não deve ser utilizado isoladamente para avaliar a saúde de uma pessoa. 
+          Consulte um médico ou nutricionista para obter uma avaliação completa.</p>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="header">A tabela a seguir indica a classificação dos valores de IMC, de acordo com a Organização Mundial da Saúde:</div><br>
+  <div class="imc-grid">
+    <div class="header">IMC</div>
+    <div class="header">Classificação</div>
+    <div class="header">Grau de Obesidade</div>
+  
+    <div class="item">Menos de 18,5</div>
+    <div class="item">Magreza</div>
+    <div class="item">0</div>
+  
+    <div class="item">Entre 18,5 e 24,9</div>
+    <div class="item">Normal</div>
+    <div class="item">0</div>
+  
+    <div class="item">Entre 25 e 29,9</div>
+    <div class="item">Sobrepeso</div>
+    <div class="item">I</div>
+  
+     <div class="item">Entre 30 e 39,9</div>
+  <div class="item">Obesidade</div>
+  <div class="item">II</div>
+
+  <div class="item">Mais de 40</div>
+  <div class="item">Obesidade grave</div>
+  <div class="item">III</div>
+</div>
+<br>
+<script src="JavaScript/calculadora_imc.js"></script>
+</body>
+</html>
+
