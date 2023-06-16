@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Agendamento de Avaliação Física</title>
+
+	<link rel="stylesheet" type="text/css" href="Css/agendamento_avaliacao.css">
+  </head>
+  <body>
+    <h1>Agendamento de Avaliação Física</h1>
+    <form method="post" action="agendamento_avaliacao.php">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th>Sábado</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+    <td>08:00</td>
+    <td>Maria</td>
+    <td><input type="checkbox" name="horario_maria[]" value="08:00-segunda"><input type="hidden" name="nome_maria" value="Maria"></td>
+    <td><input type="checkbox" name="horario_maria[]" value="08:00-terca"><input type="hidden" name="nome_maria" value="Maria"></td>
+    <td><input type="checkbox" name="horario_maria[]" value="08:00-quarta"><input type="hidden" name="nome_maria" value="Maria"></td>
+    <td><input type="checkbox" name="horario_maria[]" value="08:00-quinta"><input type="hidden" name="nome_maria" value="Maria"></td>
+    <td><input type="checkbox" name="horario_maria[]" value="08:00-sexta"><input type="hidden" name="nome_maria" value="Maria"></td>
+    <td><input type="checkbox" name="horario_maria[]" value="08:00-sabado"><input type="hidden" name="nome_maria" value="Maria"></td>
+</tr>
+<tr>
+    <td>10:00</td>
+    <td>Jane</td>
+    <td><input type="checkbox" name="horario_jane[]" value="10:00-segunda"><input type="hidden" name="nome_jane" value="Jane"></td>
+    <td><input type="checkbox" name="horario_jane[]" value="10:00-terca"><input type="hidden" name="nome_jane" value="Jane"></td>
+    <td><input type="checkbox" name="horario_jane[]" value="10:00-quarta"><input type="hidden" name="nome_jane" value="Jane"></td>
+    <td><input type="checkbox" name="horario_jane[]" value="10:00-quinta"><input type="hidden" name="nome_jane" value="Jane"></td>
+    <td><input type="checkbox" name="horario_jane[]" value="10:00-sexta"><input type="hidden" name="nome_jane" value="Jane"></td>
+    <td><input type="checkbox" name="horario_jane[]" value="10:00-sabado"><input type="hidden" name="nome_jane" value="Jane"></td>
+</tr>
+<tr>
+    <td>14:00</td>
+    <td>Roberto</td>
+    <td><input type="checkbox" name="horario_roberto[]" value="14:00-segunda"><input type="hidden" name="nome_roberto" value="Roberto"></td>
+    <td><input type="checkbox" name="horario_roberto[]" value="14:00-terca"><input type="hidden" name="nome_roberto" value="Roberto"></td>
+    <td><input type="checkbox" name="horario_roberto[]" value="14:00-quarta"><input type="hidden" name="nome_roberto" value="Roberto"></td>
+    <td><input type="checkbox" name="horario_roberto[]" value="14:00-quinta"><input type="hidden" name="nome_roberto" value="Roberto"></td>
+    <td><input type="checkbox" name="horario_roberto[]" value="14:00-sexta"><input type="hidden" name="nome_roberto" value="Roberto"></td>
+    <td><input type="checkbox" name="horario_roberto[]" value="14:00-sabado"><input type="hidden" name="nome_roberto" value="Roberto"></td>
+</tr>
+<tr>
+    <td>16:00</td>
+    <td>Aline</td>
+    <td><input type="checkbox" name="horario_aline[]" value="16:00-segunda"><input type="hidden" name="nome_aline" value="aline"></td>
+    <td><input type="checkbox" name="horario_aline[]" value="16:00-terca"><input type="hidden" name="nome_aline" value="aline"></td>
+    <td><input type="checkbox" name="horario_aline[]" value="16:00-quarta"><input type="hidden" name="nome_aline" value="aline"></td>
+    <td><input type="checkbox" name="horario_aline[]" value="16:00-quinta"><input type="hidden" name="nome_aline" value="aline"></td>
+    <td><input type="checkbox" name="horario_aline[]" value="16:00-sexta"><input type="hidden" name="nome_aline" value="aline"></td>
+    <td><input type="checkbox" name="horario_aline[]" value="16:00-sabado"><input type="hidden" name="nome_aline" value="aline"></td>
+</tr>
+
+        </tbody>
+      </table>
+      <button type="submit">Agendar</button>
+
+    </form>
+<script src="JavaScript/agendamento_avaliacao.js"></script>
+</body>
+</html>
